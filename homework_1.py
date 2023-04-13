@@ -12,7 +12,8 @@ def task2():
 # а Катя сделала в два раза больше журавликов, чем Петя и Сережа вместе?
 def task4():
     s = int(input("Введите количество журавликов: "))
-    if s < 6 or s % 6 != 0: print("нельзя определить исходя из условмй задачи")
+    if s < 6 or s % 6 != 0: 
+        print("нельзя определить исходя из условмй задачи")
     else:
         print(f"Петя и Сережа сделали по {s / 6}")
         print(f"Катя сделала {4 * s / 6}")
@@ -30,12 +31,17 @@ def taks6():
     lucky_ticket = int(input("Введите шестизначный номер билета: "))
     lucky_ticket_1 = lucky_ticket // 1000
     lucky_ticket_2 = lucky_ticket % 1000
-    if (lucky_ticket_1 // 100 + lucky_ticket_1 // 10 % 10 + lucky_ticket_1 % 100 % 10) == (lucky_ticket_2 // 100 + lucky_ticket_2 // 10 % 10 + lucky_ticket_2 % 100 % 10): 
-        print("Your ticket is a lucky")
-    else: print("your ticket isnt a lucky")
+    if (lucky_ticket_1 // 100 +
+        lucky_ticket_1 // 10 % 10 +
+        lucky_ticket_1 % 100 % 10) == (lucky_ticket_2 // 100 +
+                                       lucky_ticket_2 // 10 % 10 +
+                                       lucky_ticket_2 % 100 % 10):
+       print("Your ticket is a lucky")
+    else: 
+        print("your ticket isnt a lucky")
    
 
-#taks6()
+taks6()
 
 #Задача 8: Требуется определить, 
 # можно ли от шоколадки размером n × m долек 
@@ -49,5 +55,5 @@ def taks8():
         print('Yes')
     else: print('No')
 
-taks8()
+#taks8()
 
