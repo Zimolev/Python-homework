@@ -21,4 +21,5 @@ def task32(array: list) -> list:
             result.append((i, array[i]))
     return result
 
+
 print(task32(array(10, 0, 10)))

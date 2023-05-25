@@ -15,6 +15,6 @@ def task30 (a1: int, d: int, n: int) -> list:
     massiv = [0] * n
     massiv[0] = a1
     for i in range(1, n):
-        massiv[i] = a1 + i * d
+      massiv[i] = a1 + i * d
     return massiv
 print(task30(1, 2, 5))
